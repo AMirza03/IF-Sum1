@@ -20,7 +20,7 @@ def asks_question(a, b):
 
 
 score = 0
-question_count = 3
+question_count = 5
 
 for _ in range(question_count):
     a, correct_x, b = makes_equation()
