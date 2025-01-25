@@ -17,20 +17,20 @@ def asks_question(a, b):
         return users_answer
     except ValueError:
         print("invalid input. please enter an integer.")
-        return asks_question(a, b)  # get input again if it4 isn't an integer
+        return asks_question(a, b)  # get input again if it isn't an integer
 
 
-score = 0
-question_count = 5
+score = 0 # sets the users initial score
+question_count = 5 # number of questions asked
 
 for _ in range(question_count):
     a, correct_x, b = makes_equation()
-    users_answer = asks_question(a, b)
+    users_answer = asks_question(a, b) # prompting user for an answer
 
     if users_answer == correct_x:
         print("correct\n")
         score += 1
     else:
-        print(f"wrong, answer is {correct_x}\n")
+        print(f"wrong, answer is {correct_x}\n") 
 
 print(f"Final score {score}/{question_count}")
