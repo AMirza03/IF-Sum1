@@ -21,9 +21,8 @@ def asks_question(a, b):
 
 
 score = 0 # sets the users initial score
-question_count = 5 # number of questions asked
 
-for _ in range(question_count):
+for _ in range(5):
     a, correct_x, b = makes_equation()
     users_answer = asks_question(a, b) # prompting user for an answer
 
@@ -33,4 +32,4 @@ for _ in range(question_count):
     else:
         print(f"wrong, answer is {correct_x}\n") 
 
-print(f"Final score {score}/{question_count}")
+print(f"Final score {score}/{5}")
